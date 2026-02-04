@@ -1,23 +1,28 @@
-/* author: Isaac Reiman*/
+/* author: Isaac Reiman: 2-2-26, tested: 2-2-26*/
 
 /* style for the body*/
 body {
     width: 725px ;   
-    background-color: silver;
+    
+background-image: linear-gradient(
+45deg, gray 0%, white 50%, silver 100%); 
     margin: 10px auto;
 }
 
 main {
-    width: 50%;
+    width: 49%;
     height: 500px;
     background-color: #ffffff; /* The color is white*/
     float: left;
+    
 }
-aside {
-    width: 50%;
+
+aside { 
+    width: 49%;
     height: 500px;
     background-color: #ffffff; /* The color is white*/
     float: right;
+    
 }
 
 h1, h2, h3, h4 { 
@@ -49,3 +54,8 @@ li {
     right: 10px;
     top: 10px;
 }
+
+img {
+    position: static;
+}
+

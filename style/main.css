@@ -1,11 +1,48 @@
 /* author: Isaac Reiman: 2-2-26, tested: 2-2-26*/
 
 /* style for the body*/
+@media only screen and (max-width: 2024px) {
+    #mobile_menu {display: none;}
+}
+@media only screen and (max-width: 959px) {
+    #mobile_menu {display: none;}
+}
+@media only screen and (max-width: 767px) {
+    #mobile_menu {display: block;}
+    #nav_menu { display: none }
+    header h2 { font-size: 1.375em; }
+    header h3 { font-size: .8125em; }
+    p { font-size: .875em; }
+    article h1, main h2, aside h2
+    { font-size: 1em; }
+    aside li { font-size: .875em; }
+}
+@media only screen and (max-width: 479px) {
+    #mobile_menu {display: block;}
+    #nav_menu { display: none }
+    header h2 { font-size: 1.375em; }
+    header h3 { font-size: .8125em; }
+    p { font-size: 875em; }
+    article h1, main h2, aside h2
+    { font-size: 1em; }
+    aside li { font-size: .875em; }   
+}
+
 body {
-    width: 725px ;   
+    font-size: 1em;      
+    width: 90%;
+    max-width: 1024px;
     background-image: linear-gradient(
     45deg, gray 0%, white 50%, silver 100%); 
-    margin: 10px auto;
+    margin: 2px auto;
+    height: 1000px;
+}
+
+header {
+    width: 97.917%;              /* 940/960 * 100 */
+    padding: 10px 1.0417%;
+    clear: both;
+    font-size: 2em;
 }
 
 main {
@@ -44,6 +81,27 @@ li {
     padding-left: 10px;
 }
 
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#nav_menu ul li {
+    display: inline;
+    padding: .5 1em;
+}
+
+#nav_menu ul li a {
+    font-weight: bold;
+    color: black;
+}
+
+#nav_menu ul li a.current {
+    text-decoration: none; 
+}
+
 .bluetouch img {
     border: 2px solid #0097fc;
     margin: 0;
@@ -57,4 +115,5 @@ li {
 img {
     position: static;
 }
+
 

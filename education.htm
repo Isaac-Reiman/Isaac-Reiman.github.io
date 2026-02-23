@@ -6,22 +6,25 @@
         <meta charset="utf-8">
         <title>Isaac Reiman</title> 
         <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/slicknav.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
         <meta name="description" content="Resume"> <meta name="keywords" content="Isaac Reiman, Personal Portfolio, resume">
-    </head>
-    <body>
-       <nav>
-        <div class="left">
-            <a href="/">Education Page</a>
-        </div>
-
-        <div class="right">
-            <a href="index.htm" download>Main Page</a>
-            <a href="interests.htm" download>Interest Page</a>
-            <a href="occupation.htm" download>Occupations</a>
-            <a href="contacts.htm" target="_blank">Contact Me</a>
-            <a href="https://github.com/Isaac-Reiman/Isaac-Reiman.github.io" target="_blank">Github</a>
-            <a href="assets/Isaac_Reiman_Resume.pdf" download>Download Resume</a>        
-        </div>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm" class="current">Home Page</a></li>
+                <li><a href="education.htm">Education</a></li>
+                <li><a href="interests.htm">Interests Page</a></li>
+                <li><a href="occupation.htm">Occupation</a></li>
+                <li><a href="contacts.htm" class="lastitem">Contact Me</a></li>
+                <li><a href="assets/Isaac_Reiman_Resume.pdf" download>Download Resume</a></li>
+            </ul> 
      </nav>
 
     <body>

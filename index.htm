@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
-<!-- Isaac Reiman, Southern Illinois University Carbondale, Developed 1-16-26, and date tested 1/23/26 Comment Header for my website -->
+<!-- Isaac Reiman, Southern Illinois University Carbondale, Developed 5/5/26, and date tested 5/5/26 Comment Header for my website --> Hey You Found me! Heres a high five
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>Isaac Reiman</title> 
-        <link rel="stylesheet" href="style/main.css">
-        <link rel="stylesheet" href="style/slicknav.css">
-        <link rel="icon" href="images/icon.jpg">
+        <title>The Lore Keeper's Compendium</title> 
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="icon" type="image/x-icon" href="images/logo.ico">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
         <script src="js/jquery.slicknav.min.js"></script> 
         <script type="text/javascript"> 
@@ -15,49 +15,54 @@
                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
             }); 
         </script>
-        <meta name="description" content="Resume"> <meta name="keywords" content="Isaac Reiman, Personal Portfolio, resume">
-         <nav id="mobile_menu"></nav>
+        <meta name="description" content="game"> <meta name="keywords" content="Isaac Reiman, blog, game reivew">
+        <nav id="mobile_menu"></nav>
         <nav id="nav_menu">
             <ul>
-                <li><a href="index.htm" class="current">Home Page</a></li>
-                <li><a href="education.htm">Education</a></li>
-                <li><a href="interests.htm">Interests Page</a></li>
-                <li><a href="occupation.htm">Occupation</a></li>
-                <li><a href="contacts.htm" class="lastitem">Contact Me</a></li>
-                <li><a href="assets/Isaac_Reiman_Resume.pdf" download>Download Resume</a></li>
+                <li><a href="rdr2.htm">Red Dead Redemption 2</a></li>
+                <li><a href="ghosts.htm">Ghosts of Tsushima</a></li>
+                <li><a href="doom.htm">Doom: The Dark Ages</a></li>
+                <li><a href="specs.htm">Specs</a></li>
+                <li><a href="contacts.htm">Contact</a></li>
             </ul> 
         </nav>
 
     </head>
     
     <body>
-        <figure>
-        <figcaption>Music:</figcaption>
-        <audio controls src="audio/audio_track.m4a"></audio>
-        <a href="audio/audio_track.m4a"> Download audio </a>
-        </figure>
         <header>
-        <figure class="rover">
-            <img class="rover" src="images/self.jpg"/>
-            <img class="rlover" src="images/self2.jpg"/>
+        <figure>
+        <div class="rollover">
+        <img class="img-default" src="images/index_banner.png" alt="Default Image">
+        <img class="img-hover"   src="images/you died.png" alt="Hover Image">
+        </div>
         </figure>
         </header> 
-        <h1>Isaac Reiman</h1> 
-            <blockquote> "God made man, but John Moses Browning made man equal." Samuel Colt </blockquote>
-        <h2>Personal Portfolio</h2>
-        <p> This site is about my Work, Experience, and College Projects.</p>
-        <ol>
-            <li>Programming and Scripting Projects </li>
-            <li>Networking Project</li>
-            <li>Target Anaylsis </li>
-        </ol>
-    
+
+
+        <div class="imageflex"> 
+        <img src="images/rdr2_cover_neww.jpg"> 
+        <div>
+        <p class="imageflexcontent"><a href="rdr2.htm">Red Dead Redemption 2</a></p>
+        <p><h3> Live life like an Outlaw robbing banks and running from the law, in the dying mythology of the West. </h3></p>
+        </div> 
+        </div>
+
+        <br>
+        <div class="imageflex"> 
+        <img src="images/ghost.jpg"> 
+        <div>
+        <p class="imageflexcontent"><a href="ghosts.htm">Ghosts of Tsushima</a></p>
+        <p><h3> The Samurai code is made with Honor and Courage, but sometimes this code is what kills the Samurai.  </h3></p>
+        </div> 
+        </div>
+        <br>
+
+        <div class="imageflex"> 
+        <img src="images/doom box art.jpg"> 
+        <div>
+        <p class="imageflexcontent"><a href="doom.htm">Doom: The Dark Ages</a></p>
+        <p> <h3>Blast your way through the uneding hordes of demons with this non stop action that Doom: The Dark Ages supplies. </h3></p>
+        </div>
+        </div> 
     </body>
-
-    <main>
-        <video width="320" height="240" controls>
-        <source src="video/cat.mp4" type="video/mp4">
-        </video>
-    </main>
-
-</html>
